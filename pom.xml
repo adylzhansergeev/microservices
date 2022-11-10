@@ -11,7 +11,8 @@
   <modules>
     <module>customer</module>
       <module>fraud</module>
-    <module>eureka-server</module>
+      <module>eureka-server</module>
+      <module>clients</module>
   </modules>
 
   <name>myservices</name>
@@ -19,11 +20,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>18</maven.compiler.source>
-    <maven.compiler.target>18</maven.compiler.target>
-    <spring.boot.maven.plugin.version>2.7.5</spring.boot.maven.plugin.version>
-    <spring.boot.dependencies.version>2.7.5</spring.boot.dependencies.version>
-    <spring.cloud-version>2021.0.5</spring.cloud-version>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <spring.boot.maven.plugin.version>2.6.6</spring.boot.maven.plugin.version>
+    <spring.boot.dependencies.version>2.6.6</spring.boot.dependencies.version>
+    <spring.cloud-version>2021.0.1</spring.cloud-version>
   </properties>
 
   <dependencyManagement>
@@ -55,6 +56,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
   </dependencies>
 
